@@ -1,0 +1,217 @@
+
+@media (max-width: 300px) {
+
+  html{
+    overflow: visible;
+    width: 200px;
+  }
+
+#navbar{
+  width: 250px;
+}
+
+#picturebar{
+  width: 250px;
+}
+
+#content{
+  width: 250px;
+}
+
+  img{
+    width: 50px;
+    height: 50px;
+  }
+
+  h1{
+    font-size: 50px;
+    width: 250px;
+  }
+
+}
+
+/*Whole page styling below*/
+
+#maindiv{
+  display: grid;
+  grid-gap: 1vw;
+}
+
+/*Navbar styling and grid layout below*/
+
+#navbar{
+  grid-row: 1;
+  grid-column: 1/12;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Lobster';
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li{
+  display: inline;
+  padding: 45px;
+}
+
+#navbar a{
+    text-decoration:none;
+    color: #4E9258;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#navbar a:hover{
+  font-size: 35px;
+}
+
+/*Styling for the heading below*/
+
+#heading{
+  grid-row: 2;
+  grid-column: 1/12;
+  background-color: #837E7C;
+  text-align: center;
+  color: black;
+  letter-spacing: 1px;
+  font-family: 'Caveat', cursive;
+}
+
+/*Picturebar styling below*/
+
+#picturebar{
+  grid-row: 3;
+  grid-column: 1/9;
+  text-align: center;
+  padding: 20px;
+}
+
+#picturebar img{
+  padding: 20px;
+}
+
+#picturebar img:hover{
+  width: 300px;
+  height: 200px;
+}
+
+
+/*Sidebar styling below for the list of related links*/
+
+#sidebar{
+  grid-row: 4/10;
+  grid-column: 8/12;
+  background-color: #4E9258;
+  width: 200px;
+  font-size: 25px;
+}
+
+#sidebar li{
+  list-style-type: square;
+  color: black;
+  padding: 30px;
+}
+
+#sidebar a{
+  color: black;
+}
+
+/*The main content styling is below. This has the information for all the trials and sites in it.*/
+
+#content{
+  grid-row: 4/10;
+  grid-column: 1/8;
+  background-color: #837E7C;
+  padding: 10px;
+}
+
+#content h3{
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#content p,li{
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+/*The section below is for the nested grid*/
+
+#articlegrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-gap: 1vw;
+}
+
+.hike{
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.hike2{
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.hike3{
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.hike4{
+  grid-column: 4/5;
+  grid-row: 1;
+}
+
+.climb{
+  grid-column: 1/2;
+  grid-row: 2;
+}
+
+.climb2{
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.climb3{
+  grid-column: 3/4;
+  grid-row: 2;
+}
+
+.fish{
+  grid-column: 1/2;
+  grid-row: 3;
+}
+
+.fish2{
+  grid-column: 2/3;
+  grid-row: 3;
+}
+
+.camp{
+  grid-column: 1/2;
+  grid-row: 4;
+}
+
+/*Styling for the footer below*/
+
+#foot{
+  grid-row: 10/12;
+  grid-column: 1/12;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#foot a{
+  padding: 20px;
+}

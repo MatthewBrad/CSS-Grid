@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Narures Hotspot Contact Us</title>
+
+<style>
+
+/*Main grid for whole page styling below*/
+
+    #maindiv{
+      display: grid;
+      grid-gap: 1vw;
+      width: 100%;
+    }
+
+/*Styling for the navbar below*/
+
+      #navbar{
+        grid-row: 1;
+        grid-column: 1/12;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Lobster', cursive;
+      }
+
+      #navbar ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+      }
+
+      #navbar li{
+        display: inline;
+        padding: 45px;
+      }
+
+      #navbar a{
+          text-decoration:none;
+          color: #4E9258;
+          font-size: 30px;
+          padding: 50px;
+      }
+
+      #navbar a:hover{
+        font-size: 40px;
+      }
+
+/*Heading styling below*/
+
+      header{
+        grid-row: 2;
+        grid-column: 1/12;
+        text-align: center;
+        background-color: #837E7C;
+        font-family: 'Caveat', cursive;
+      }
+
+/*Content styling which will hold the form*/
+
+      #content{
+        grid-row: 3/10;
+        grid-column: 1/12;
+        padding-left: 20px;
+        border: 2px solid #837E7C;
+        font-size: 15px;
+      }
+
+/*Styling for the footer below*/
+
+      #foot{
+        grid-row: 10/12;
+        grid-column: 1/12;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #foot a{
+        padding: 20px;
+      }
+
+</style>
+
+<!--The link for the fonts is below-->
+
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Caveat|Courgette|Gentium+Basic|Indie+Flower|Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--Main div for whole page below-->
+
+<div id="maindiv">
+
+<!--The main heading is below-->
+
+<header>
+  <h1>Natures Hotspot Contact Page</h1>
+</header>
+
+<!--Navbar section below-->
+
+  <div id="navbar">
+
+    <ul>
+      <li><a href="css_grid_project.html">Home</a></li>
+      <li><a href="css_grid_project_gallery.html">Gallery</a></li>
+      <li><a href="css_grid_project_contact.html">Contact Us</a></li>
+    </ul>
+
+  </div>
+
+<!--Content div below this will hold the contact form-->
+
+  <div id="content">
+
+    <h3>Please fill in your information below, and we will get back to you as soon as possible.<h3>
+
+    <form>
+
+      <p>Name: <br/> <input type="text" name="name"></p>
+
+      <p>Surname: <br/> <input type="text" name="surname"></p>
+
+      <p>Email Address: <br/> <input type="email" name="emailaddress"></p>
+
+      <p>Phone Number: <br/> <input type="tel" name="Phonenumber"></p>
+
+      <p>Comment/Question: <br/> <textarea rows="5" cols="40"></textarea></p>
+
+      <input type="submit" value="SEND">
+
+    </form>
+
+      <p>Thank you for your feed back!</p>
+
+  </div>
+
+<!--The footer section with the social links is below-->
+
+<footer id="foot">
+
+  <a href="http://www.instagram.com/" target="_blank"><img src="insta.jpg" alt="Istagram" width="50px" height="50px"></a>
+  <a href="http://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook" width="175px" height="50px"></a>
+  <a href="http://www.twitter.com/" target="_blank"><img src="twitteric.ico" alt="Twitter" width="50px" height="50px"></a>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
